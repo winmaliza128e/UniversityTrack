@@ -44,16 +44,12 @@ public class Student extends Person{
 	//Get the list of classes a specific student (given its studentID) is attending
 	public List<String> getAttendedClasses(List<SClass> classes, String studentID){
 		
-		System.out.println("Total specific classes:"+classes.size());
 		List<String> attendedClasses = new ArrayList<String>();
 		
 		
 		
 		for(int i = 0; i < classes.size(); i++) {
 			
-			System.out.println("Clase:"+classes.get(i).getName() + 
-					           " Students:"+classes.get(i).getAttendants().size());		
-
 			if(classes.get(i).getAttendants().size() > 0) {
 				for(int j=0; j<classes.get(i).getAttendants().size(); j++) {
 					if(classes.get(i).getAttendants().get(j).universityID.equals(studentID)){
@@ -76,7 +72,7 @@ public class Student extends Person{
 		return("------------------------------------------------------------------\n"+
 	           super.toString() + "\n" +
 			   "University ID      :" +universityID+"\n"+
-	           "Degree Program     :$"+degreeProgram);
+	           "Degree Program     :"+degreeProgram);
 	}
 
 }

@@ -71,7 +71,7 @@ public class Teacher extends Person implements Salary {
 			}
 		}
 		activeHours = totalActiveHours;
-		System.out.println("Total Active Hours:"+activeHours);
+		//System.out.println("Total Active Hours:"+activeHours);
 	}
 	
 	//Overriding method toString to print information of the class
