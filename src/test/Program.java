@@ -124,13 +124,16 @@ public class Program {
 							getClassesAttendedByStudent(localInput2.nextLine());
 						}
 						break;	
-
+					case "9":
+						break;
 					default:
 						System.out.println("Invalid option. Please try again");
 				}
-				System.out.println("Do you want to come back to main menu (y/n):");
-				if(userInput.nextLine().equalsIgnoreCase("y")) {
-					menu();
+				if(!option.equals("9")) {
+				  System.out.println("Do you want to come back to main menu (y/n):");
+				  if(userInput.nextLine().equalsIgnoreCase("y")) {
+					  menu();
+				  }
 				}
 				else
 				{
